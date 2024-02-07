@@ -1,0 +1,28 @@
+{
+  "name": "love_u_2_lots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "run-script-os": "^1.0.2"
+  },
+  "scripts": {
+    "start": "run-script-os",
+    "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --startPath index.html",
+    "//": "Hello! If you are having trouble running this command. Try changing Microsoft\\Edge to MicrosoftEdge",
+    "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faahim/happy-birthday.git"
+  },
+  "keywords": [
+    "Happy",
+    "Birthday"
+  ],
+  "author": "Tem",
+  "license": "MIT",
+  "dependencies": {}
+}
