@@ -1,10 +1,12 @@
 {
+  "homepage": "https://temuulino.github.io/love-2-lots",
   "name": "love_u_2_lots",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "devDependencies": {
     "browser-sync": "^2.18.13",
+    "gh-pages": "^6.1.1",
     "run-script-os": "^1.0.2"
   },
   "scripts": {
@@ -12,7 +14,9 @@
     "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --startPath index.html",
     "//": "Hello! If you are having trouble running this command. Try changing Microsoft\\Edge to MicrosoftEdge",
     "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -23,6 +27,5 @@
     "Birthday"
   ],
   "author": "Tem",
-  "license": "MIT",
-  "dependencies": {}
+  "license": "MIT"
 }
